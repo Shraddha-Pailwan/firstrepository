@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Synergy - Login/Signup</title>
+  <link rel="stylesheet" href="Styles/login_signup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="toggle-forms">
+        <button id="login-btn" class="active">Login</button>
+        <button id="signup-btn">Signup</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="form active">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="login-email">Email/Username</label>
+          <input type="text" id="login-email" required>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required>
+        </div>
+        <div class="input-group">
+          <a href="#" id="forgot-password">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="oauth">
+          <p>Or login with:</p>
+          <button class="google-btn">Google</button>
+          <button class="college-btn">College Email</button>
+        </div>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signup-form" class="form">
+        <h2>Signup</h2>
+        <div class="input-group">
+          <label for="signup-name">Name</label>
+          <input type="text" id="signup-name" required>
+        </div>
+        <div class="input-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" required>
+        </div>
+        <div class="input-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" required>
+        </div>
+        <div class="input-group">
+          <label for="signup-department">Department</label>
+          <input type="text" id="signup-department" required>
+        </div>
+        <div class="input-group">
+          <label for="signup-club">Club Membership (optional)</label>
+          <input type="text" id="signup-club">
+        </div>
+        <button type="submit" class="btn">Signup</button>
+        <div class="oauth">
+          <p>Or signup with:</p>
+          <button class="google-btn">Google</button>
+          <button class="college-btn">College Email</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="Scripts/login_signup.js"></script>
+</body>
+</html>
